@@ -1,0 +1,38 @@
+{
+  "name": "Commit",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "github": {
+      "type": "string"
+    },
+    "filePath": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "homework_id": {
+      "type": "number"
+    },
+    "title": {
+      "type": "string"
+    },
+    "user": {
+      "type": "object"
+    },
+    "group": {
+      "type": "number"
+    },
+    "class": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

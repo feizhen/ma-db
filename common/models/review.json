@@ -1,0 +1,39 @@
+{
+  "name": "Review",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "reviewee": {
+      "type": "object"
+    },
+    "reviewer": {
+      "type": "object"
+    },
+    "homework_id": {
+      "type": "number"
+    },
+    "score": {
+      "type": "number"
+    },
+    "finalScore": {
+      "type": "number"
+    },
+    "comment": {
+      "type": "string",
+      "required": true
+    },
+    "class": {
+      "type": "number"
+    },
+    "group": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

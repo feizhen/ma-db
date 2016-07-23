@@ -1,0 +1,41 @@
+{
+  "name": "Customer",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "role": {
+      "type": "string"
+    },
+    "sid": {
+      "type": "number"
+    },
+    "username": {
+      "type": "string"
+    },
+    "fullname": {
+      "type": "string"
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "class": {
+      "type": "number"
+    },
+    "group": {
+      "type": "number"
+    },
+    "email": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
