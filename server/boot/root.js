@@ -26,11 +26,14 @@ module.exports = function(server) {
   var router = server.loopback.Router();
   var customer = app.models.Customer;
   router.post('/upload-images', upload_image.single('upload-images'), function(req, res) {
+    // console.log('req.body: ', typeof(req.body.username));
     // console.log('req.file: ', req.file);
-    // console.log('res.req.file: ', res.req.file);    
+    // console.log('res.req.file: ', res.req.file);
+    res.send("hello");    
     var image_path = req.file.path.slice(23)
+    var name = req.body.username
     // console.log('image_path: ', image_path)
-    customer.updateAll({username: 'zhangshan'}, {avatar: image_path});
+    customer.updateAll({username: name}, {avatar: image_path});
   });
 
   //上传json文件
@@ -46,10 +49,10 @@ module.exports = function(server) {
       // console.log('JSON.parse(data).user: ', JSON.parse(data).user);
       // console.log('JSON.parse(data).user.length: ', JSON.parse(data).user.length);
       // console.log('typeof(JSON.parse(data).user[0]): ', typeof(JSON.parse(data).user[0]));
-      for (var i = 0; i < length; i++)
-        customer.upsert(users[i], function() {
-          // console.log('无敌！！');
-        });
+      // for (var i = 0; i < length; i++)
+      //   customer.upsert(users[i], function() {
+      //     // console.log('无敌！！');
+      //   });
     });
   });
 
