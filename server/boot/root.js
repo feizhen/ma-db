@@ -49,10 +49,10 @@ module.exports = function(server) {
       // console.log('JSON.parse(data).user: ', JSON.parse(data).user);
       // console.log('JSON.parse(data).user.length: ', JSON.parse(data).user.length);
       // console.log('typeof(JSON.parse(data).user[0]): ', typeof(JSON.parse(data).user[0]));
-      // for (var i = 0; i < length; i++)
-      //   customer.upsert(users[i], function() {
-      //     // console.log('无敌！！');
-      //   });
+      for (var i = 0; i < length; i++)
+        customer.upsert(users[i], function() {
+          // console.log('无敌！！');
+        });
     });
   });
 
