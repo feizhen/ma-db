@@ -36,10 +36,10 @@ module.exports = function(server) {
       cb(null, file.fieldname + '-' + Date.now() + '.zip')
     }
   });
-  var upload_image = multer({storage: images_storage});
-  var upload_json = multer({storage: jsons_storage});
-  var upload_homework_picture = multer({storage: homework_pictures_storage});
-  var upload_homework_code = multer({storage: homework_codes_storage});
+  var upload_image = multer({storage: images_storage, limits: {fileSize: 2000000}});
+  var upload_json = multer({storage: jsons_storage, limits: {fileSize: 60000}});
+  var upload_homework_picture = multer({storage: homework_pictures_storage, limits: {fileSize: 2000000}});
+  var upload_homework_code = multer({storage: homework_codes_storage, limits: {fileSize: 60000000}});
 
   var router = server.loopback.Router();
   var customer = app.models.Customer;
@@ -55,7 +55,7 @@ module.exports = function(server) {
 
   //上传json文件
   router.post('/upload-jsons', upload_json.single('upload-jsons'), function(req, res) {
-    //现在是根据固定的json文件格式里来写的，json文件里有一个user数组，数组里面放的是各user的信息，到时候可根据需求改动。
+    //现在是根据固定的json文件格式里来写的，json文件里有一个user数组，数组里面放的是各user的信息，到时候可根据需求改动。在'../my-achievements/src/assets/images/upload_jsons'路径下有一个json文件以供参考。
     var json_path = req.file.path;
     fs.readFile(json_path, 'utf8', function(err, data) {
       var users = JSON.parse(data).user;
@@ -73,9 +73,10 @@ module.exports = function(server) {
   });
 
   //上传作业代码
-  router.post('/upload-homework-codes', upload_homework_code.single('upload-homework-codes'), function(req, res) { 
+  router.post('/upload-homework-codes', upload_homework_code.single('upload-homework-codes'), function(req, res) {
     var id = req.body.homework_id;
     var name = req.body.username;
+    var github_address = req.body.github;
     var homework_codes_path = req.file.path;
     var data = {
       "github" : "",
@@ -101,10 +102,11 @@ module.exports = function(server) {
     commit.find({where: {homework_id: id, "user.username": name}}, function(err, result) {
       if (result.length == 0) {
         commit.upsert(data, function() {
-          console.log("upsert data success!!");
+          // console.log("upsert data success!!");
         });
       }
-      commit.updateAll({homework_id: id}, {filePath: homework_codes_path});
+      commit.updateAll({homework_id: id}, {filePath: homework_codes_path, github: github_address});
+      //"description"目前还没有输入框所以没有数据
     });
   });
 
