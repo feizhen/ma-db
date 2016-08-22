@@ -1,0 +1,45 @@
+{
+  "name": "Notification",
+  "plural": "Notifications",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "string"
+    },
+    "receiver": {
+      "type": "object"
+    },
+    "type": {
+      "type": "string"
+    },
+    "homework_id": {
+      "type": "number"
+    },
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "read": {
+      "type": "boolean"
+    },
+    "starred": {
+      "type": "boolean"
+    },
+    "important": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

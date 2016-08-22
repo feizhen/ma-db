@@ -47,5 +47,9 @@
   "Commit": {
     "dataSource": "maDS",
     "public": true
+  },
+  "Notification": {
+    "dataSource": "maDS",
+    "public": true
   }
 }
