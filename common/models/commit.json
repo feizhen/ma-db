@@ -9,13 +9,16 @@
     "github": {
       "type": "string"
     },
-    "filePath": {
+    "file": {
       "type": "string"
     },
-    "description": {
+    "picture": {
       "type": "string"
     },
-    "homework_id": {
+    "message": {
+      "type": "string"
+    },
+    "homeworkId": {
       "type": "number"
     },
     "title": {

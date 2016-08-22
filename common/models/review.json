@@ -12,13 +12,10 @@
     "reviewer": {
       "type": "object"
     },
-    "homework_id": {
+    "homeworkId": {
       "type": "number"
     },
     "score": {
-      "type": "number"
-    },
-    "finalScore": {
       "type": "number"
     },
     "comment": {

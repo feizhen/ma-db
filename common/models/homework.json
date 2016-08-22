@@ -6,13 +6,16 @@
     "validateUpsert": true
   },
   "properties": {
-    "id": {
+    "homeworkId": {
       "type": "number"
     },
     "title": {
       "type": "string"
     },
     "description": {
+      "type": "string"
+    },
+    "state": {
       "type": "string"
     },
     "classes": {

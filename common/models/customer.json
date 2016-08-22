@@ -10,7 +10,7 @@
       "type": "string"
     },
     "sid": {
-      "type": "number"
+      "type": "string"
     },
     "username": {
       "type": "string"
