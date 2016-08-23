@@ -1,0 +1,45 @@
+  {
+  "name": "Notification",
+  "plural": "Notifications",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "receiver": {
+      "type": "object"
+    },
+    "type": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "read": {
+      "type": "boolean"
+    },
+    "starred": {
+      "type": "boolean"
+    },
+    "important": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "homework": {
+      "type": "belongsTo",
+      "model": "Homework",
+      "foreignKey": "homeworkId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
