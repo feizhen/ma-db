@@ -7,7 +7,8 @@
   },
   "properties": {
     "homeworkId": {
-      "type": "number"
+      "type": "number",
+      "id": true
     },
     "title": {
       "type": "string"
@@ -25,7 +26,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "reviews": {
+      "type": "hasMany",
+      "model": "Review",
+      "foreignKey": "homeworkId"
+    },
+    "commits": {
+      "type": "hasMany",
+      "model": "Commit",
+      "foreignKey": "homeworkId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

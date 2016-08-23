@@ -12,9 +12,6 @@
     "reviewer": {
       "type": "object"
     },
-    "homeworkId": {
-      "type": "number"
-    },
     "score": {
       "type": "number"
     },
@@ -30,7 +27,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "customer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
