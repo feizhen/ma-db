@@ -48,7 +48,7 @@
                     "classId": 1,
                     "startTime": "2016-08-18T14:11:19.556Z",
                     "endTime": "2016-08-30T14:11:19.556Z",
-                    "status": "current"
+                    "status": "present"
                 },
                 {
                     "classId": 2,
@@ -94,7 +94,7 @@
                     "classId": 2,
                     "startTime": "2016-08-22T11:43:30.190Z",
                     "endTime": "2016-09-03T11:43:30.190Z",
-                    "status": "current"
+                    "status": "present"
                 }
             ],
             "state": "open",
@@ -108,7 +108,7 @@
                     "classId": 1,
                     "startTime": "2016-08-20T04:24:56.503Z",
                     "endTime": "2016-08-30T04:24:56.503Z",
-                    "status": "current"
+                    "status": "present"
                 },
                 {
                     "classId": 2,
@@ -148,13 +148,13 @@
                     "classId": 1,
                     "startTime": "2016-08-23T05:50:38.875Z",
                     "endTime": "2016-08-29T05:50:38.875Z",
-                    "status": "current"
+                    "status": "present"
                 },
                 {
                     "classId": 2,
                     "startTime": "2016-08-21T06:16:53.076Z",
                     "endTime": "2016-08-28T06:16:53.076Z",
-                    "status": "current"
+                    "status": "present"
                 }
             ],
             "state": "closed",
@@ -188,7 +188,7 @@
                     "classId": 1,
                     "startTime": "2016-08-22T23:48:19.144Z",
                     "endTime": "2016-08-28T23:48:19.144Z",
-                    "status": "current"
+                    "status": "present"
                 },
                 {
                     "classId": 2,
@@ -234,7 +234,7 @@
                     "classId": 2,
                     "startTime": "2016-08-14T03:15:44.930Z",
                     "endTime": "2016-08-25T03:15:44.930Z",
-                    "status": "current"
+                    "status": "present"
                 }
             ],
             "state": "closed",
@@ -314,7 +314,7 @@
                     "classId": 2,
                     "startTime": "2016-08-14T04:00:59.819Z",
                     "endTime": "2016-08-26T04:00:59.819Z",
-                    "status": "current"
+                    "status": "present"
                 }
             ],
             "state": "closed",
@@ -354,7 +354,7 @@
                     "classId": 2,
                     "startTime": "2016-08-14T23:20:06.290Z",
                     "endTime": "2016-08-24T23:20:06.290Z",
-                    "status": "current"
+                    "status": "present"
                 }
             ],
             "state": "open",
@@ -368,13 +368,13 @@
                     "classId": 1,
                     "startTime": "2016-08-16T09:54:00.080Z",
                     "endTime": "2016-08-28T09:54:00.080Z",
-                    "status": "current"
+                    "status": "present"
                 },
                 {
                     "classId": 2,
                     "startTime": "2016-08-13T19:48:41.932Z",
                     "endTime": "2016-08-24T19:48:41.932Z",
-                    "status": "current"
+                    "status": "present"
                 }
             ],
             "state": "closed",
@@ -388,7 +388,7 @@
                     "classId": 1,
                     "startTime": "2016-08-23T05:09:07.209Z",
                     "endTime": "2016-09-03T05:09:07.209Z",
-                    "status": "current"
+                    "status": "present"
                 },
                 {
                     "classId": 2,
