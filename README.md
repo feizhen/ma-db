@@ -1,4 +1,7 @@
+#将版本改为2.31.0, 请重新npm install
+
 # Ma-db
+
 
 1. npm install
 2. run 'node bin/automigrate.js' to migrate data to mongodb
